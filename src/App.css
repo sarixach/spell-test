@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.spellList {
+    flex: 0.8 1;
+    margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.spellDetails {
+    margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.spellRow, .spell__detailRow {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.spell__detailRow {
+    cursor: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+.spellRow:hover {
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.24);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.spellName, .spell__detailName {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.spell__detailName {
+    width: 100px;
+    text-align: center;
+}
+
+.spell__detailValue {
+    margin-left: 15px;
 }
